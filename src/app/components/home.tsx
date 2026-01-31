@@ -9,6 +9,8 @@ import {
   Zap, 
   MoreHorizontal,
   ArrowDownRight,
+  ArrowUpRight,
+  ArrowDownLeft,
   Coffee,
   Clock
 } from 'lucide-react';
@@ -88,6 +90,16 @@ export function Home() {
           </div>
         </div>
         <div className="w-2 h-2 rounded-full bg-[#3A4A1E]" />
+      </section>
+
+      {/* Quick Actions */}
+      <section className="flex gap-4">
+        <button className="flex-1 h-[48px] bg-[#3C1F0F] text-white rounded-[12px] text-[14px] font-medium flex items-center justify-center gap-2 shadow-lg shadow-[#3C1F0F44] active:scale-[0.98] transition-all">
+          <ArrowUpRight size={18} /> Pay
+        </button>
+        <button className="flex-1 h-[48px] border-2 border-[#3C1F0F] text-[#3C1F0F] rounded-[12px] text-[14px] font-medium flex items-center justify-center gap-2 active:bg-[#3C1F0F0D] transition-all">
+          <ArrowDownLeft size={18} /> Receive
+        </button>
       </section>
 
       {/* Spending Overview Card (Hero) */}
